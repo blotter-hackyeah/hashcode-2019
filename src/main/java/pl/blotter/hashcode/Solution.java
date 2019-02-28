@@ -2,10 +2,7 @@ package pl.blotter.hashcode;
 
 import java.io.IOException;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Solution {
 
@@ -32,11 +29,16 @@ public class Solution {
                 }
                 System.out.println("horizontalPhotos = " + horizontalPhotos);
                 System.out.println("verticalPhotos = " + verticalPhotos);
+                solve(horizontalPhotos, verticalPhotos);
             }
 
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private static void solve(Map<Integer, List<String>> horizontalPhotos, Map<Integer, List<String>> verticalPhotos) {
+
     }
 
 }
